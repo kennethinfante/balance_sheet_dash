@@ -1,0 +1,496 @@
+﻿account_id,account_number,account_name,account_type_name,account_category,income_flag,balancesheet_flag,subsidiary
+113,94115,Accounts Payable,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+122,85920,Accounts Receivable,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+501,98100,Accrued Audit,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+880,98320,Accrued Profit Sharing,Deferred Expense,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+879,98310,Accrued Paid Timeoff,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+115,92780,Accrued Purchases,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+878,98300,Accrued Salaries,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1086,98330,Accrued Warranty Costs,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+212,83015,Accumulated Depreciation,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+803,82901,Accumulated Depreciation - Tangible Fixed Assets,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+454,89100,ACME Corp 0755-3230036038 Business Account,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+545,89131,ACME Corp 0755-3230131146 Mastercard Peter,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+542,89110,ACME Corp 0755-3230136342 EUR,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+543,89120,ACME Corp 0755-3230136369 USD,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+544,89130,ACME Corp 0755-3230140137 Mastercard Erwan,Accounts Receivable,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+663,89132,ACME Corp 0755-3230241316 Mastercard Leithold,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+675,89133,ACME Corp 0755-3230448360 Mastercard Francisco,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+676,89134,ACME Corp 0755-3230448379 Mastercard Uryu,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+787,89135,ACME Corp 0755-3230715180 Mastercard Kenneth Ms,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+788,89136,ACME Corp 0755-3230752647 Mastercard Jesper Ms,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+806,89137,ACME Corp 0755-3230824303 Mastercard Heimdahl,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+807,89138,ACME Corp 0755-3230882400 Mastercard Allan,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+812,89139,ACME Corp 0755-3230939038 Mastercard Anderson,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+814,89141,ACME Corp 0755-3230969352 Mastercard Heimdahl Platinum,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+815,89142,ACME Corp 0755-3231001165 Mastercard Tobias,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+813,89140,ACME Corp 0755-3231001246 Mastercard Matthew,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+816,89143,ACME Corp 0755-3231019269 Mastercard Clayton,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+827,89145,ACME Corp 0755-3231134599 Mastercard Ibrahim,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+826,89144,ACME Corp 0755-3231176208 Mastercard Kevin,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+955,89146,ACME Corp 0755-3231330746 Mastercard Leithold Platinum,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+956,89147,ACME Corp 0755-3231406807 Mastercard Olaf,Long Term Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+966,89149,ACME Corp 0755-3231524419 Mastercard Christian,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+965,89148,ACME Corp 0755-3231537693 Mastercard Bernard,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+990,89151,ACME Corp 0755-3231704654 Mastercard Christian Platinum,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1001,89152,ACME Corp 0755-3231759920 Mastercard Ronnel,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1046,89156,ACME Corp 0755-3232000561 Mastercard Ibarra,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1045,89155,ACME Corp 0755-3232000618 Mastercard Rico,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1049,89157,ACME Corp 0755-3232060149 Mastercard Tobby,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1053,89159,ACME Corp 0755-3232134819 Mastercard Finnick,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1052,89158,ACME Corp 0755-3232163541 Mastercard Jonnah,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1059,89161,ACME Corp 0755-3232207328 Mastercard Bernard Platinum,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1070,89300,ACME Corp HSBC Business GBP895471000210830,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1071,89305,ACME Corp HSBC Eur GBP565471000950767,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1074,89315,ACME Corp HSBC Margin Account GBP455471000210832,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1072,89310,ACME Corp HSBC Usd GBP345471000950768,Accounts Receivable,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+112,85851,Advances Paid,Accounts Receivable,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1068,81155,Decrease During The Year,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+824,94181,Awaiting Credit Notes,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+632,93130,AM Contribution,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1169,89620,American Express CC,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+819,94180,Other Due Costs,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+874,89600,Citizens Bank CC-Angelito ,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1171,89640,Capital One Credit Card-Angelito,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+631,93120,A-Tax,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+382,80000,Assets,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+959,80050,Assets Not Activated Yet,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1667,89220,Santana Bank,Deferred Expense,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1175,89163,Bank Deposit,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1666,89215,Banco Bilbao Vizcaya Argentaria Savings,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1117,80060,Building Hall 2022,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+708,81510,Building Under Construction,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1665,89210,Caixabank Insurance,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+683,81810,Canteen (3 Years),Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1172,89650,Capital One Credit Card-CBE,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1,1000,Checking,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+894,89165,Citizens Bank & Trust,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+492,95540,Co2 Tax,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+491,95530,Coal Tax,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1079,95570,Commissions Payable,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+460,90200,"Company Capital, Beginning",Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+424,83350,Contract Work In Progress,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+411,82110,Correction Of Previous,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+463,90510,"Correction To Equity, Begin",Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1669,55250001,Cumulative Translation Adjustment-ACME,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1670,55250002,Cumulative Translation Adjustment-Nielsen,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1671,55250003,Cumulative Translation Adjustment-Mercato,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+110,3035,Cumulative Translation Adjustment,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+231,90110,Cumulative Translation Adjustment-Elimination,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1130,95569,Customer Deposits,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+607,92700,Customer Prepayments,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+718,95401,Customs Clearance,Deferred Expense,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+825,92714,Denmark Gateway Pvt Ltd,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+953,96026,Dylan: Holiday Pay Allowed,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1000,96023,Dylan: Spent Sh/Free Choice,Deferred Expense,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+601,96012,Dylan: Due AM Contribution,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+603,96014,Dylan: Due A-Tax,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+593,96008,Dylan: Due ATP Pension,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+605,96024,Dylan: Paternity Leave,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+801,96025,Dylan: Net Salary Owed,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+958,96027,"Dylan: Net Salary Owed-Missing Account Number, etc",Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+594,96011,Dylan: Due Pension-Group Life,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+604,96022,Dylan: Obliged Sh/Free Choice,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+602,96013,Dylan: Special Pension Contribution Due,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+211,83010,Deferred Expense,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+884,92520,Deferred Income Tax Payable,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+802,85900,Deferred Tax,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1144,85910,Deferred Tax,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+674,92702,Deposit,Fixed Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1165,92518,Deposit-Antenna Rent,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+386,80300,Development Projects,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+565,81270,Disposal Depreciation,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+407,81450,Disposal Depreciation,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+392,81150,Disposal Depreciation,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+534,81504,Disposal Depreciation,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+402,81350,Disposal Depreciation,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+622,81750,Disposal Depreciation,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+692,81814,Disposal Depreciation,Equity,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+705,81824,Disposal Depreciation,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+694,80250,Disposal Depreciation,Other Current Asset,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1031,80115,Disposal Depreciation,Other Current Liability,Not categorized,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+552,81650,Disposal Depreciation,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+397,81220,Disposal Depreciation,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+715,80105,Disposal Depreciation,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1036,81804,Disposal Depreciation,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+391,81140,Disposal During The Year,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+406,81440,Disposal During The Year,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+533,81503,Disposal During The Year,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+621,81740,Disposal During The Year,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+689,81813,Disposal During The Year,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+686,81803,Disposal During The Year,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+693,80240,Disposal During The Year,Accounts Receivable,Accounts Receivable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1030,80114,Disposal During The Year,Equity,Retained Earnings,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+564,81265,Disposal During The Year,Other Current Asset,Prepayments to Suppliers,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+551,81640,Disposal During The Year,Accounts Payable,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+396,81215,Disposal During The Year,Other Current Liability,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+401,81340,Disposal During The Year,Accounts Receivable,Accounts Receivable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+704,81823,Disposal During The Year,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+714,80104,Disposal During The Year,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+957,92665,Develop Diverse Pvt Ltd,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+637,92670,Various Unknown Deposits and Payments,Equity,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+701,81820,Electrical Installation Workshop (20 Years),Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+489,95510,Electricity Tax,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+843,85830,Employee Advances,Other Current Asset,Work in Progress for Third Parties,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+457,90100,Equity,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+462,90500,"Equity, Beginning",Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+986,95403,Acquisition VAT on IT Equip Purchase with Reverse Payment,Accounts Receivable,Accounts Receivable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1251,85862,Escrow Account,Accounts Receivable,Accounts Receivable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+486,95400,Eu Acquisition VAT (Ä),Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1199,89402,Eur Vendor/Customer Settlement,Equity,Retained Earnings,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1173,85861,External Inventory In Transit,Equity,Retained Earnings,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+394,81250,Fixtures,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+561,81290,Fixtures Workshop,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1191,92593,Fleet Guard Corp Leasing,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1192,92511,Fleet Guard Leasing Agreement 70248,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1224,92595,Flexlease,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1225,92521,Flexlease Leasing Agreement 1019369,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1050,92685,Fork Truck Payable,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1048,85841,French Vat,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+988,94160,Fx Adjustment Payables,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+987,85160,Fx Adjustment Receivables,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+490,95520,Gas Tax,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+709,81511,Land Value (Nottingham),Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1243,81513,Land Value (Bristol),Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+982,95571,GST Liability - Malaysia,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+981,85852,GST on Purchases - Malaysia,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+980,95572,GST on Sales - Malaysia,Other Current Asset,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+496,96100,Held Income Tax,Accounts Receivable,Accounts Receivable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+498,96200,Held Labor Market Contributions,Accounts Receivable,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+796,92002,Provision - ACME Corp,Accounts Receivable,Other Receivables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+818,92003,Provision - ACME Holding Corp,Accounts Receivable,Other Receivables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+578,91310,Provision for Project After-Sales Service,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+900,94184,Provision for Technical Assistance,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1170,89630,Amex Credit Card-Loki,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1083,93160,Assistance package State loan,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1160,92592,HSBC Leasing,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1113,92505,HSBC Leasing Agreement A145694,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1127,92506,HSBC Leasing Agreement A159049,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1128,92507,HSBC Leasing Agreement A159050,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1131,92508,HSBC Leasing Agreement A159803,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1178,92509,HSBC Leasing Agreement A169726,Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1200,92512,HSBC Leasing Agreement A172077,Deferred Expense,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1218,92516,HSBC Leasing Agreement A172788,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1219,92517,HSBC Leasing Agreement A173567,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1211,92514,HSBC Leasing Agreement A174237,Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1210,92513,HSBC Leasing Agreement A174792,Accounts Receivable,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1220,92519,HSBC Leasing Agreement A177311,Accounts Payable,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1249,92523,HSBC Leasing Agreement A177779,Accounts Payable,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1230,92522,HSBC Leasing Agreement A180205,Other Current Liability,Subordinated Loans,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1236,89378,HSBC Mastercard - Alexander 5471251817,Other Current Liability,Subordinated Loans,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1092,89334,HSBC Mastercard - Allen 5471215193,Other Current Asset,Other Receivables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1093,89335,HSBC Mastercard - Anderson 5471215194,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1166,89368,HSBC Mastercard - Anders 5471237339,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1077,89331,HSBC Mastercard - Bernard 5471212040,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1167,89369,HSBC Mastercard - Linus 5471237334,Accounts Payable,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1228,89375,HSBC Mastercard - Guido 5471250418,Accounts Payable,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1145,89366,HSBC Mastercard - Nielsen  547123334,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1094,89336,HSBC Mastercard - Christian 5471215204,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1235,89377,HSBC Mastercard - Chris 5471252084,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1118,89352,HSBC Mastercard - Carl 5471221048,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1212,89373,HSBC Mastercard - Christian B 5471246529,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1227,89374,HSBC Mastercard - Clayton 5471250417,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1237,89379,HSBC Mastercard - Daniel 5471251086,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1090,89332,HSBC Mastercard - Erwan 5471213041,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1095,89337,HSBC Mastercard - Francisco 5471215190,Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1096,89338,HSBC Mastercard - Heimdahl 5471215203,Accounts Payable,Leasing Debt,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1097,89339,HSBC Mastercard - Ibrahim 5471215198,Other Current Asset,Prepayments to Suppliers,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1246,89381,HSBC Mastercard - Jacobson 5471255298,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1229,89376,HSBC Mastercard - John Michael 5471250434,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1098,89340,HSBC Mastercard - Jester 5471215191,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1099,89341,HSBC Mastercard - Kevin 5471215197,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1091,89333,HSBC Mastercard - Johnny 5471216430,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1100,89342,HSBC Mastercard - Jonas 5471215202,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1132,89359,HSBC Mastercard - Kelvin 5471228904,Other Current Liability,Prepayments from Customers,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1119,89353,HSBC Mastercard - Kenneth 5471223294,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1146,89367,HSBC Mastercard - Kennedy 5471235005,Other Current Asset,Investments,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1186,89370,HSBC Mastercard - Lara 5471239887,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1120,89354,HSBC Mastercard - Larson 5471223207,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1133,89360,HSBC Mastercard - Lina 5471228608,Other Current Asset,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1122,89356,HSBC Mastercard - Gwen 5471224383,Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1139,89364,HSBC Mastercard - Mary Jane 5471231956,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1101,89343,HSBC Mastercard - Leithold 5471215187,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1134,89361,HSBC Mastercard - Mario 5471228609,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1102,89344,HSBC Mastercard - Matthew 5471215195,Other Current Asset,Prepayments to Suppliers,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1116,89351,HSBC Mastercard - Mateo 5471219719,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1138,89363,HSBC Mastercard - Morten 5471231958,Other Current Asset,Other Receivables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1256,89382,HSBC Mastercard - Martin 5471257223,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1245,89380,HSBC Mastercard - Nelson 5471254103,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1103,89345,HSBC Mastercard - Olaf 5471215199,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1261,89384,HSBC Mastercard - Paul 5471260414,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1140,89365,HSBC Mastercard - Bjourne 5471231830,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1135,89362,HSBC Mastercard - Rosemund 5471228610,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1104,89346,HSBC Mastercard - Peterson 5471215188,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1197,89371,HSBC Mastercard - Rasmus 4571241962,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1123,89357,HSBC Mastercard - Rasmusen 5471224512,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1105,89347,HSBC Mastercard - Rico 5471215205,Deferred Expense,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1106,89348,HSBC Mastercard - Ronnel 5471215200,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1204,89372,HSBC Mastercard - Soren 5471245623,Deferred Expense,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1129,89358,HSBC Mastercard - Sarah 5471225873,Accounts Payable,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1257,89383,HSBC Mastercard - Steve 5471257257,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1076,89330,HSBC Mastercard - Thomas 5471212041,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1107,89349,HSBC Mastercard - Tobias 5471215196,Other Current Liability,Subordinated Loans,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1108,89350,HSBC Mastercard - Tobby 5471215201,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1121,89355,HSBC Mastercard - Tommy 5471221049,Other Current Asset,Prepayments to Suppliers,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1248,92545,"HSBC, Mortgage Loan 1",Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1080,92540,"HSBC, Mortgage Loan 2",Other Current Asset,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1148,92542,"HSBC, Mortgage Loan 2 - Amortization",Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1208,83365,Ongoing Work For Own Account-Intercompany,Deferred Expense,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1207,83355,Work In Progress Elimination-Intercompany,Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+465,90530,Impairment,Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+412,82140,Impairment Of Financial Assets,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+487,95450,Import VAT ($),Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+633,93140,Import Specification - Customs M.V.,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+875,98150,Income Tax Payable,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+229,95300,Incoming VAT (GBP),Long Term Liability,Long Term Loans,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1015,95310,Incoming VAT (Export),Accounts Receivable,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1184,95315,Incoming VAT (No),Other Current Liability,Tax Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+563,81260,Increase During The Year,Other Current Asset,Investments,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+550,81630,Increase During The Year,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+427,81130,Increase During The Year,Other Asset,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+429,81330,Increase During The Year,Other Current Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+430,81430,Increase During The Year,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+383,80230,Increase During The Year,Other Current Asset,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+428,81210,Increase During The Year,Other Current Asset,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+532,81502,Increase During The Year,Other Current Asset,Tax Asset,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+620,81730,Increase During The Year,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+688,81812,Increase During The Year,Other Current Asset,Other Receivables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+677,82120,Increase During The Year,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+685,81802,Increase During The Year,Equity,Equity Capital,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+703,81822,Increase During The Year,Other Current Liability,Accounts Payable,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+1029,80113,Increase During The Year,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+712,80103,Increase During The Year,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+962,92668,Deposit Minority shareholders,Other Current Asset,Inventory,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+381,80100,Intangible Fixed Assets,Long Term Liability,Other Payables,FALSE,TRUE,"1, 16, 17, 18, 19, 20, 22, 27, 33, 34, 35, 36"
+890,94150,Intercompany Accounts Payable,Other Current Liability,Other Payables,FALSE,TRUE,18
+936,85853,Intercompany Clearing Account,Other Current Asset,Inventory,FALSE,TRUE,18
+1668,85951,Intercompany Order Progress,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+967,94105,Intercompany Payable,Other Current Liability,Other Payables,FALSE,TRUE,18
+848,85150,Intercompany Receivable,Other Current Liability,Other Payables,FALSE,TRUE,18
+1143,89170,Interest Checking -California Bank & Trust,Other Current Liability,Other Payables,FALSE,TRUE,18
+960,98160,Interest Payable,Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,18
+426,83400,Interim Invoice Work In Progress,Accounts Receivable,Accounts Receivable,FALSE,TRUE,18
+419,83210,Inventories Departure Eu (Ä),Other Current Liability,Subordinated Loans,FALSE,TRUE,18
+421,83160,Inventories Import Other Departure ($),Fixed Asset,Intangible Fixed Assets,FALSE,TRUE,18
+420,83150,Inventories Import Other Increase ($),Deferred Expense,Intangible Fixed Assets,FALSE,TRUE,18
+213,85854,Inventory Asset,Other Current Liability,Prepayments from Customers,FALSE,TRUE,18
+417,83110,Inventory Departure GBP,Other Current Liability,Other Payables,FALSE,TRUE,18
+216,85855,Inventory In Transit,Accounts Receivable,Accounts Receivable,FALSE,TRUE,18
+416,83100,Inventory Increase GBP,Accounts Payable,Accounts Payable,FALSE,TRUE,18
+418,83200,Inventory Increase Eu (Ä),Other Current Liability,Other Payables,FALSE,TRUE,18
+1263,83115,Inventory Writedown,Other Current Liability,Other Payables,FALSE,TRUE,18
+423,83300,IPO Warehouse,Other Current Liability,Tax Payables,FALSE,TRUE,18
+838,83130,Items In Transit,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1239,89660,Johnny Capital One Cc,Other Current Asset,Tax Asset,FALSE,TRUE,18
+1054,87400,Capital shares in jointly ventures,Other Current Asset,Tax Asset,FALSE,TRUE,18
+805,87300,Capital shares in affiliated companies,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+789,92600,"Capital shares in affiliated companies, cost price acquisitions",Other Current Liability,Other Payables,FALSE,TRUE,18
+817,81512,Cold hall under renovation,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+823,89200,Course Regulation Currency accounts,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+665,92701,Lan Sam Steel Industry,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+917,80040,Leasehold Improvements,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1161,92591,Leasing Fyn,Other Current Liability,Other Payables,FALSE,TRUE,18
+666,92502,Leasing Fyn Agreement 2109054,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1008,92503,Leasing Fyn Agreement 2110042,Other Current Liability,Other Payables,FALSE,TRUE,18
+1047,92504,Leasing Fyn Agreement 2110066,Other Current Liability,Other Payables,FALSE,TRUE,18
+584,94110,Lease Debt,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+455,90000,Liabilities,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1231,92637,Loan ACME Inc (Settlement),Long Term Liability,Leasing Debt,FALSE,TRUE,18
+921,86101,Loan ACME Inc.,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+414,82160,Loss On Sale Of Financial Fixed Assets,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+800,89901,Lundgren's Account (Compensation and Reimbursement Lawsuits),Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1260,83105,Manual Allocation Of Inventory,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1253,83260,Manual Allocation Of Work Orders,Long Term Liability,Other Payables,FALSE,TRUE,18
+810,92703,Marco Marine Corp,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+983,89153,BNP - 5127 8107 9330,Other Current Liability,Other Payables,FALSE,TRUE,18
+1037,89154,BNP- 7127 8100 5742,Other Current Liability,Other Payables,FALSE,TRUE,18
+989,92635,Intercompany ACME Inc.,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1250,92657,Intercompany Continuity Engineering Industries Ltd,Long Term Liability,Leasing Debt,FALSE,TRUE,18
+1240,92655,Intercompany Continuity Corp,Other Current Liability,Not categorized,FALSE,TRUE,18
+515,92610,Intercompany Leithold,Fixed Asset,Not categorized,FALSE,TRUE,18
+518,92640,Intercompany ACME Corp,Fixed Asset,Not categorized,FALSE,TRUE,18
+1226,92625,Intercompany ACME Food,Fixed Asset,Not categorized,FALSE,TRUE,18
+519,92650,Intercompany ACME Holding Corp,Long Term Liability,Not categorized,FALSE,TRUE,18
+625,92630,Intercompany ACME LLC,Long Term Liability,Not categorized,FALSE,TRUE,18
+527,92660,Intercompany Northridge Corp,Long Term Liability,Not categorized,FALSE,TRUE,18
+516,92620,Intercompany Northridge Holding 2017 Corp,Other Current Liability,Not categorized,FALSE,TRUE,18
+1242,92656,Intercompany Overbeck,Long Term Liability,Not categorized,FALSE,TRUE,18
+640,92501,"Middletown Savings Bank, Debenture",Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+882,98340,Miscellaneous Accruals,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+1223,95404,VAT on Purchases abroad (both EU and third countries),Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+985,95402,VAT on Purchases of Services Abroad With Reverse Payment Obligation,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+628,95350,VAT settlement,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+630,93110,VAT reporting,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+459,90950,Net Profit,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+992,85840,Norwegian VAT On Purchases,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+895,92680,Note Payable-Aweca Ltd.,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+883,92510,Notes Payable,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+765,89400,ACME Holding Corp 0755-3230036003 Business account,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+1073,89320,ACME Holding Corp HSBC GBP485471000210836,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+626,89150,ACME LLC - US Account,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+681,81800,Office Furniture (3 Years),Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+488,95500,Oil Tax,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+1209,92594,Olesminde Landbrug Pvt Ltd,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+425,83360,Ongoing Work For Own Account,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+791,92651,"Increases and write-downs Capital shares, Profit for the year",Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+792,91311,"Increases and write-downs Capital shares, Provision",Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+1232,92652,Increases/write-downs Capital shares Profit for the year (Associates),Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+53,3200,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+400,81310,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+619,81710,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+549,81610,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+562,81255,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+390,81110,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+385,80210,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+405,81410,Opening Balance,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+531,81501,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+395,81205,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+684,81801,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+702,81821,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+687,81811,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+1028,80112,Opening Balance,Bank,Other Payables,FALSE,TRUE,18
+1034,82111,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+711,80102,Opening Balance,Bank,Credit Facility,FALSE,TRUE,18
+1033,81826,Opening Balance Disposal,Bank,Credit Facility,FALSE,TRUE,18
+541,89500,Northridge Holding 2017 Corp 0755-3230001226 Business Account,Bank,Credit Facility,FALSE,TRUE,18
+1075,89325,Northridge Holding 2017 Corp HSBC GBP705471000210835,Bank,Credit Facility,FALSE,TRUE,18
+1081,89326,Northridge Holding 2017 Corp HSBC Withdrawal Account 5471211164,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+512,94120,Other Accounts Payable,Bank,Credit Facility,FALSE,TRUE,18
+502,98200,Other Accrued Expenses,Bank,Credit Facility,FALSE,TRUE,18
+995,96600,Other Deductions Payable,Bank,Credit Facility,FALSE,TRUE,18
+885,92530,Other Long-Term Liabilities,Bank,Credit Facility,FALSE,TRUE,18
+472,85300,Other Receivables,Bank,Credit Facility,FALSE,TRUE,18
+228,95200,Outgoing VAT (GBP),Bank,Credit Facility,FALSE,TRUE,18
+1183,95210,Outgoing VAT (No),Bank,Credit Facility,FALSE,TRUE,18
+483,95100,"Outstanding Vat, Beginning Of Month",Bank,Credit Facility,FALSE,TRUE,18
+497,96150,Paid Income Tax,Bank,Credit Facility,FALSE,TRUE,18
+499,96250,Paid Labor Market Contributions,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+1177,94125,Payable Employee Remuneration,Bank,Credit Facility,FALSE,TRUE,18
+1060,98500,Payable Retainer,Bank,Credit Facility,FALSE,TRUE,18
+1201,92675,Staff Association 2023 (Club A95),Bank,Credit Facility,FALSE,TRUE,18
+893,89160,Petty Cash,Bank,Credit Facility,FALSE,TRUE,18
+1035,85815,Prepaid Expense - Other,Bank,Credit Facility,FALSE,TRUE,18
+839,85800,Prepaid Expenses,Bank,Credit Facility,FALSE,TRUE,18
+842,85810,Prepaid Insurance,Bank,Credit Facility,FALSE,TRUE,18
+841,85820,Prepaid Subscriptions,Bank,Credit Facility,FALSE,TRUE,18
+422,83250,Products Being Manufactured,Bank,Credit Facility,FALSE,TRUE,18
+413,82150,Profit From Sale Of Financial Fixed Assets,Bank,Credit Facility,FALSE,TRUE,18
+1043,98400,Project Billings,Bank,Credit Facility,FALSE,TRUE,18
+218,95568,Project Cost Variance,Bank,Credit Facility,FALSE,TRUE,18
+449,86300,Provision For Bad Debts,Bank,Credit Facility,FALSE,TRUE,18
+1262,92800,Provision For Completion Of Projects,Bank,Credit Facility,FALSE,TRUE,18
+473,85400,Provision For Expected Losses From Other Receivables,Bank,Credit Facility,FALSE,TRUE,18
+920,94185,Provision Sales Commission,Bank,Credit Facility,FALSE,TRUE,18
+1112,94200,Provision Warranty,Bank,Credit Facility,FALSE,TRUE,18
+471,85200,Provisions For Anticipated Losses From Sales,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+1044,85950,Purchases For Jobs In Progress,Bank,Credit Facility,FALSE,TRUE,18
+996,85750,Purchases On Behalf Of GBP,Bank,Credit Facility,FALSE,TRUE,18
+125,85856,Purchases Returned Not Credited,Bank,Credit Facility,FALSE,TRUE,18
+470,85100,Receivables From Sales,Bank,Credit Facility,FALSE,TRUE,18
+474,85500,Receivables From Staff,Bank,Credit Facility,FALSE,TRUE,18
+117,95567,Refunds Payable,Bank,Credit Facility,FALSE,TRUE,18
+713,93150,Renter Mv.,Bank,Cash and Cash Equivalents,FALSE,TRUE,18
+52,3000,Retained Earnings,Bank,Credit Facility,FALSE,TRUE,18
+458,90800,Retained Earnings Opening,Bank,Credit Facility,FALSE,TRUE,18
+464,90520,Revaluations,Bank,Credit Facility,FALSE,TRUE,18
+1566,,Sales Tax Expense Arkansas,Bank,Credit Facility,FALSE,TRUE,18
+1466,,Sales Tax Expense Missouri,Bank,Credit Facility,FALSE,TRUE,18
+1565,,Sales Tax Payable Kansas,Bank,Credit Facility,FALSE,TRUE,18
+1465,,Sales Tax Payable Missouri,Bank,Credit Facility,FALSE,TRUE,18
+1039,95573,Sales Taxes Payable Arkansas,Bank,Credit Facility,FALSE,TRUE,18
+1216,,Sales Taxes Payable California,Bank,Credit Facility,FALSE,TRUE,18
+821,95574,Sales Taxes Payable Kansas,Bank,Credit Facility,FALSE,TRUE,18
+109,95575,Sales Taxes Payable Montana,Bank,Credit Facility,FALSE,TRUE,18
+1062,92690,SBA Loan Payable,Bank,Credit Facility,FALSE,TRUE,18
+451,87100,Securities,Bank,Credit Facility,FALSE,TRUE,18
+452,87200,"Securities, Exchange Adjustment",Bank,Credit Facility,FALSE,TRUE,18
+871,82185,Security Deposits,Bank,Not categorized,FALSE,TRUE,18
+793,92000,Company capital,Bank,Not categorized,FALSE,TRUE,18
+1176,89164,Short-Term Investment China Bank,Bank,Not categorized,FALSE,TRUE,18
+1082,92704,Tax Loan Assistance Package,Bank,Not categorized,FALSE,TRUE,18
+629,93100,The Tax Account,Bank,Not categorized,FALSE,TRUE,18
+1025,93105,Tax account Oe Export Se41280697,Bank,Not categorized,FALSE,TRUE,18
+1156,96030,Due Work rental Tax GBP,Other Current Asset,Inventory,FALSE,TRUE,22
+1222,98125,Board fee due,Other Current Liability,Other Payables,FALSE,TRUE,22
+592,96300,Due holiday pay obligation (Clerical employees),Bank,Cash and Cash Equivalents,FALSE,TRUE,22
+1027,80111,Software,Long Term Liability,Long Term Loans,FALSE,TRUE,22
+940,89610,Steve's First Bank Cc,Other Current Liability,Other Payables,FALSE,TRUE,"17, 18, 20, 22, 27, 33, 34, 35"
+511,94100,Supplier Creditors,Other Current Liability,Other Payables,FALSE,TRUE,"16, 17, 20, 22, 27, 33, 34, 35"
+1168,85825,Tax Deposits,Other Current Liability,Other Payables,FALSE,TRUE,"16, 18, 20, 22, 27, 33, 34, 35"
+1267,95290,Tax Liability Denmark,Bank,Cash and Cash Equivalents,FALSE,TRUE,22
+1367,,Tax Liability Spain,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,22
+1266,95305,Tax On Purchases Denmark,Bank,Cash and Cash Equivalents,FALSE,TRUE,16
+1366,,Tax On Purchases Spain,Other Current Asset,Other Receivables,FALSE,TRUE,22
+1265,95205,Tax On Sales Denmark,Other Current Liability,Other Payables,FALSE,TRUE,"16, 17, 18"
+1365,,Tax On Sales Spain,Other Current Liability,Subordinated Loans,FALSE,TRUE,22
+1174,95583,Taxes Payable,Other Current Liability,Other Payables,FALSE,TRUE,16
+710,80101,Technical Drawings,Other Current Liability,Other Payables,FALSE,TRUE,22
+641,88100,Temporary Holding,Long Term Liability,Long Term Loans,FALSE,TRUE,16
+1152,95360,Receivable Sales sum Shares,Other Current Asset,Other Receivables,FALSE,TRUE,22
+1155,85901,Tax receivable / Joint taxation contribution,Other Current Liability,Other Payables,FALSE,TRUE,22
+500,98990,Total Accrued Costs,Bank,Cash and Cash Equivalents,FALSE,TRUE,17
+627,82900,Total Accumulated Depreciation,Credit Card,Credit Facility,FALSE,TRUE,22
+530,81500,Total Buildings (20 Years),Other Current Liability,Other Payables,FALSE,TRUE,22
+535,81505,Total Buildings: Depreciation,Other Current Asset,Other Receivables,FALSE,TRUE,22
+699,82180,Total Canteen: Depreciation,Other Current Liability,Other Payables,FALSE,TRUE,22
+548,81690,Total Cars,Credit Card,Credit Facility,FALSE,TRUE,22
+553,81660,Total Cars: Depreciation,Long Term Liability,Long Term Loans,FALSE,TRUE,22
+510,94190,Total Creditors,Other Current Liability,Other Payables,FALSE,TRUE,22
+447,86990,Total Debtors,Other Current Liability,Other Payables,FALSE,TRUE,"16, 18"
+706,81825,Total Electrical Installation (20 Years): Depreciation,Other Current Asset,Other Receivables,FALSE,TRUE,22
+456,90990,Total Equity/Shareholders,Other Current Liability,Other Payables,FALSE,TRUE,22
+410,82190,Total Financial Assets,Other Current Asset,Prepayments to Suppliers,FALSE,TRUE,"18, 22"
+678,82170,Total Financial Assets: Depreciation,Long Term Liability,Long Term Loans,FALSE,TRUE,16
+409,82990,Total Fixed Assets,Other Current Asset,Tax Asset,FALSE,TRUE,22
+566,81275,Total Fixtures Workshop: Depreciation,Credit Card,Credit Facility,FALSE,TRUE,22
+398,81225,Total Fixtures: Depreciation,Other Current Liability,Prepayments from Customers,FALSE,TRUE,22
+387,80990,Total Intangible Fixed Assets,Other Current Asset,Work in Progress for Third Parties,FALSE,TRUE,22
+384,80290,Total Interior Locations (3 Years),Other Current Liability,Other Payables,FALSE,TRUE,22
+695,80260,Total Interior Locations : Depreciation,Bank,Credit Facility,FALSE,TRUE,17
+415,83990,Total Inventories,Bank,Credit Facility,FALSE,TRUE,16
+404,81490,Total IT (3 Years),Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,"16, 18"
+408,81460,Total IT (3 Years): Depreciation,Bank,Credit Facility,FALSE,TRUE,16
+477,92590,Total Long-Term Debt,Other Current Liability,Prepayments from Customers,FALSE,TRUE,22
+700,81806,Total Office Furniture: Depreciation,Bank,Cash and Cash Equivalents,FALSE,TRUE,22
+618,81790,Total Other Assets (Deferred),Long Term Liability,Other Payables,FALSE,TRUE,16
+623,81760,Total Other Assets: Depreciation,Credit Card,Credit Facility,FALSE,TRUE,22
+495,96990,Total Personal Tax And Contributions,Credit Card,Credit Facility,FALSE,TRUE,22
+389,81190,Total Plant And Machinery,Bank,Cash and Cash Equivalents,FALSE,TRUE,34
+393,81160,Total Plant And Machinery: Depreciation,Fixed Asset,Tangible Fixed Assets,FALSE,TRUE,16
+476,91390,Total Provisions,Credit Card,Credit Facility,FALSE,TRUE,22
+1111,94990,Total Provisions And Commissions,Other Current Liability,Other Payables,FALSE,TRUE,"16, 17, 18"
+469,85990,Total Receivables,Other Current Liability,Other Payables,FALSE,TRUE,"16, 17, 18"
+450,87990,Total Securities & Investments,Other Current Liability,Tax Payables,FALSE,TRUE,"16, 17, 18, 36"
+478,92990,Total Short-Term Debt,Other Current Asset,Tax Asset,FALSE,TRUE,"16, 17, 18, 36"
+1032,80116,Total Software: Depreciation,Bank,Cash and Cash Equivalents,FALSE,TRUE,35
+388,81990,Total Tangible Fixed Assets,Bank,Cash and Cash Equivalents,FALSE,TRUE,35
+716,80106,Total Technical Drawings : Depreciation,Long Term Liability,Long Term Loans,FALSE,TRUE,16
+399,81390,Total Technical Equipment Lease,Bank,Cash and Cash Equivalents,FALSE,TRUE,35
+403,81360,Total Technical Equipment Lease: Depreciation,Bank,Not categorized,FALSE,TRUE,1
+482,95990,Total VAT & Tax Etc.,Other Current Liability,Not categorized,FALSE,TRUE,22
+448,86100,Trade Debtors,Long Term Liability,Not categorized,FALSE,TRUE,22
+914,92515,Truck Loan Payable,Bank,Not categorized,FALSE,TRUE,27
+116,6005,Undeposited Funds,Other Current Asset,Not categorized,FALSE,TRUE,22
+872,96500,Unremitted 401(K) Contributions,Long Term Liability,Not categorized,FALSE,TRUE,22
+873,96550,Unremitted H.S.A. Contributions,Other Current Asset,Not categorized,FALSE,TRUE,22
+1196,89401,Usd Vendor/Customer Settlement,Other Current Liability,Not categorized,FALSE,TRUE,22
+1567,,Use Tax Payable Kansas,Equity,Not categorized,FALSE,TRUE,16
+1467,,Use Tax Payable Missouri,Deferred Expense,Not categorized,FALSE,TRUE,16
+1150,92609,Exchange rate adjustment Equity,Fixed Asset,Not categorized,FALSE,TRUE,27
+1233,90511,Exchange rate adjustment Capital shares (Primo),Bank,Not categorized,FALSE,TRUE,27
+227,95576,VAT Liability,Credit Card,Not categorized,FALSE,TRUE,22
+1024,95577,VAT Liability Brazil,Accounts Payable,Not categorized,FALSE,TRUE,34
+1164,95581,VAT Liability China,Bank,Not categorized,FALSE,TRUE,34
+226,85857,VAT On Purchases,Other Current Liability,Not categorized,FALSE,TRUE,"16, 17, 18"
+1023,85858,VAT On Purchases Brazil,Other Current Asset,Not categorized,FALSE,TRUE,35
+1163,85859,VAT On Purchases China,Other Current Liability,Not categorized,FALSE,TRUE,35
+225,95579,VAT On Sales,Other Current Liability,Not categorized,FALSE,TRUE,22
+1022,95580,VAT On Sales Brazil,Other Current Liability,Not categorized,FALSE,TRUE,22
+1162,95584,VAT On Sales China,Other Current Liability,Not categorized,FALSE,TRUE,22
+494,95900,VAT Settlement,Other Current Liability,Not categorized,FALSE,TRUE,22
+870,85850,Vendor Deposits,Other Current Liability,Not categorized,FALSE,TRUE,22
+811,85700,Vendor Prepayments,Other Current Liability,Not categorized,FALSE,TRUE,"16, 17, 18, 36"
+1699,89301,Visas Empresa,Accounts Receivable,Not categorized,FALSE,TRUE,35
+1252,92535,Waiver Fee,Bank,Not categorized,FALSE,TRUE,35
+493,95550,Water Tax,Accounts Receivable,Not categorized,FALSE,TRUE,35
+461,90700,Yield,Accounts Receivable,Not categorized,FALSE,TRUE,35
