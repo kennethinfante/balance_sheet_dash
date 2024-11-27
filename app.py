@@ -2,18 +2,19 @@ import dash
 from dash import Dash, dcc, html, dash_table
 
 from dash.dependencies import Output, Input
+from dash.exceptions import PreventUpdate
 import pandas as pd
 
 bs_all = pd.read_csv('data-raw/balance_sheet_model.csv')
 
 # select only relevant columns
-columns_to_show = ['year', 'quarter_name', 'month_name', 'bs_flag', 'category', 'account_name', 'std_amount_gbp']
+columns_to_show = ['year', 'quarter_name', 'month_name', 'month', 'bs_flag', 'category', 'account_name', 'std_amount_gbp']
 
 bs_all = bs_all[columns_to_show]
 date_filters = pd.read_csv('data-raw/date_filters.csv')
 
 # initial filters
-yr_filters = date_filters.year.drop_duplicates(ignore_index=True).sort_values(ascending=False, ignore_index=True)
+yr_filters = date_filters.year.drop_duplicates().sort_values(ascending=False, ignore_index=True)
 
 yr_initial_select = yr_filters[0]
 
@@ -45,17 +46,17 @@ app.layout = html.Div(
             id="menu-label",
             children=[
                 html.P(
-                    id="yr-label",
+                    id="label-yr",
                     children="Year",
                     style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
                 ),
                 html.P(
-                    id="qtr-label",
+                    id="label-qtr",
                     children="Quarter",
                     style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
                 ),
                 html.P(
-                    id="month-label",
+                    id="label-month",
                     children="Month",
                     style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
                 )
@@ -65,8 +66,8 @@ app.layout = html.Div(
             id="menu-option",
             children=[
                 dcc.Checklist(
-                    id="yr-filter",
-                    className="yr-chk",
+                    id="filter-yr",
+                    className="chk-yr",
                     options=[{"label": year, "value": year} for year 
                                 in yr_filters],
                     value=[yr_initial_select],
@@ -74,10 +75,15 @@ app.layout = html.Div(
                     # value=bs_all.year.drop_duplicates().sort_values()[-1]
                 ),
                 dcc.Checklist(
-                    id="qtr-filter",
-                    className="qtr-chk",
+                    id="filter-qtr",
+                    className="chk-qtr",
                     options=[{"label": quarter, "value": quarter} for quarter
                                 in qtr_filters],
+                    style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
+                ),
+                dcc.Checklist(
+                    id="filter-month",
+                    className="chk-month",
                     style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
                 )
             ]
@@ -86,15 +92,15 @@ app.layout = html.Div(
             id="separator",
             children=[
                 html.Br()
-                ,html.Button("Show Balance Sheet", id="show-balance-sheet", n_clicks=0)
+                ,html.Button("Update Balance Sheet", id="btn-update", n_clicks=0)
                 , html.Hr(), html.Br()]
         ),
         html.Div(
             dash_table.DataTable(
-                id='bs-table',
+                id='table-bs',
                 columns=[{"name": i, "id": i} 
                          for i in bs_initial.columns],
-                data=bs_all.to_dict('records'),
+                data=bs_initial.to_dict('records'),
                 style_cell=dict(textAlign='left'),
                 style_header=dict(backgroundColor="paleturquoise"),
                 style_data=dict(backgroundColor="lavender")
@@ -104,14 +110,42 @@ app.layout = html.Div(
 )
 
 @app.callback(
-    Output('header-description', 'children'), 
-    Input('bs-table', 'active_cell'))
+    Output('filter-month', 'options'), 
+    Input('filter-yr', 'value'),
+    Input('filter-qtr', 'value'))
+def update_months(selected_years, selected_quarters):
     
-def update_graphs(active_cell):
-    if active_cell:
-        cell_data = bs_all.iloc[active_cell['row']][active_cell['column_id']]
-        return f"Data: \"{cell_data}\" from table cell: {active_cell}"
-    return "Click the table"
+    print(selected_years, selected_quarters)
+    if selected_quarters is None or selected_years is None:
+        stripped_dates = date_filters.loc[date_filters.year == yr_initial_select]
+    else:
+        stripped_dates = date_filters.loc[date_filters.year.isin(selected_years)
+                            ].loc[date_filters.quarter_name.isin(selected_quarters)]
+    
+    available_months = stripped_dates.sort_values(by='month'
+                            ).month_name.drop_duplicates(ignore_index=True)
+    
+    return [{"label": month, "value": month} for month
+                                in available_months]
+
+@app.callback(
+    Output('table-bs', 'data'), 
+    Input('filter-yr', 'value'),
+    Input('filter-qtr', 'value'),
+    Input('filter-month', 'value'),
+    Input('btn-update', 'n_clicks'))
+def update_months(selected_years, selected_quarters, selected_months, n_clicks):
+    if n_clicks == 0:
+        raise PreventUpdate
+    elif n_clicks > 0:
+        # print(n_clicks)
+        bs_update = bs_all.loc[bs_all.year.isin(selected_years) &
+                        bs_all.quarter_name.isin(selected_quarters) &
+                        bs_all.month_name.isin(selected_months)].sort_values(by=['year', 'quarter_name', 'month'])
+        
+        data = bs_update.to_dict('records')
+        return data
+    
 
 if __name__ == "__main__":
     app.run_server(debug=True, port=8051)

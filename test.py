@@ -14,4 +14,6 @@ yr_filters1 = yr_filters.sort_values(ascending=False, ignore_index=True)
 # %%
 yr_filters1
 # %%
-print(date_filters.columns)
+print(date_filters)
+
+# %%
