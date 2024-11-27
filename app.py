@@ -1,9 +1,18 @@
-import dash
-from dash import Dash, dcc, html, dash_table
+from datetime import datetime
 
-from dash.dependencies import Output, Input
-from dash.exceptions import PreventUpdate
 import pandas as pd
+import dash
+from dash import dcc, html, dash_table
+
+from dash.dependencies import Output, Input, State
+from dash.exceptions import PreventUpdate
+from dash.long_callback import DiskcacheLongCallbackManager
+
+## Diskcache
+import diskcache
+cache = diskcache.Cache("./cache")
+long_callback_manager = DiskcacheLongCallbackManager(cache)
+
 
 bs_all = pd.read_csv('data-raw/balance_sheet_model.csv')
 
@@ -21,9 +30,10 @@ yr_initial_select = yr_filters[0]
 qtr_filters = date_filters.quarter_name.drop_duplicates().sort_values(ascending=False, ignore_index=True)
 
 # bs_initial = bs_all[bs_all['year'] == yr_initial_select]
-bs_initial = bs_all.loc[bs_all['year'] == yr_initial_select, :]
+bs_default = bs_all.loc[bs_all.year == yr_initial_select
+                        ].sort_values(by=['year', 'quarter_name', 'month'])
 
-app = Dash(__name__)
+app = dash.Dash(__name__, long_callback_manager=long_callback_manager)
 
 app.layout = html.Div(
     id="app-container",
@@ -92,15 +102,17 @@ app.layout = html.Div(
             id="separator",
             children=[
                 html.Br()
-                ,html.Button("Update Balance Sheet", id="btn-update", n_clicks=0)
-                , html.Hr(), html.Br()]
+                , html.Button(id="btn-update", children=["Update Balance Sheet"])
+                , html.P(id="text-notif", children=["Updated on " + datetime.now().strftime("%m/%d/%Y, %H:%M:%S")])
+                , html.Br()
+            ]
         ),
         html.Div(
             dash_table.DataTable(
                 id='table-bs',
                 columns=[{"name": i, "id": i} 
-                         for i in bs_initial.columns],
-                data=bs_initial.to_dict('records'),
+                         for i in bs_default.columns],
+                data=bs_default.to_dict('records'),
                 style_cell=dict(textAlign='left'),
                 style_header=dict(backgroundColor="paleturquoise"),
                 style_data=dict(backgroundColor="lavender")
@@ -113,14 +125,14 @@ app.layout = html.Div(
     Output('filter-month', 'options'), 
     Input('filter-yr', 'value'),
     Input('filter-qtr', 'value'))
-def update_months(selected_years, selected_quarters):
-    
-    print(selected_years, selected_quarters)
-    if selected_quarters is None or selected_years is None:
-        stripped_dates = date_filters.loc[date_filters.year == yr_initial_select]
+def update_months(y, q):
+    if y is not None and q is not None:
+        stripped_dates = date_filters.loc[date_filters.year.isin(y)
+                            ].loc[date_filters.quarter_name.isin(q)]
+    elif y is not None and q is None:
+        stripped_dates = date_filters.loc[date_filters.year.isin(y)]
     else:
-        stripped_dates = date_filters.loc[date_filters.year.isin(selected_years)
-                            ].loc[date_filters.quarter_name.isin(selected_quarters)]
+        stripped_dates = date_filters.loc[date_filters.year == yr_initial_select]
     
     available_months = stripped_dates.sort_values(by='month'
                             ).month_name.drop_duplicates(ignore_index=True)
@@ -128,23 +140,51 @@ def update_months(selected_years, selected_quarters):
     return [{"label": month, "value": month} for month
                                 in available_months]
 
+# good enough for update - long callbacks are difficult
 @app.callback(
-    Output('table-bs', 'data'), 
-    Input('filter-yr', 'value'),
-    Input('filter-qtr', 'value'),
-    Input('filter-month', 'value'),
-    Input('btn-update', 'n_clicks'))
-def update_months(selected_years, selected_quarters, selected_months, n_clicks):
-    if n_clicks == 0:
-        raise PreventUpdate
-    elif n_clicks > 0:
-        # print(n_clicks)
-        bs_update = bs_all.loc[bs_all.year.isin(selected_years) &
-                        bs_all.quarter_name.isin(selected_quarters) &
-                        bs_all.month_name.isin(selected_months)].sort_values(by=['year', 'quarter_name', 'month'])
-        
-        data = bs_update.to_dict('records')
-        return data
+    Output('text-notif', 'children'),
+    Output('table-bs', 'data'),
+    State('filter-yr', 'value'),
+    State('filter-qtr', 'value'),
+    State('filter-month', 'value'),
+    Input('btn-update', 'n_clicks'),
+    prevent_initial_call=True,
+    running=[(Output("btn-update", "disabled"), True, False)]
+    # ,running=[
+    #     (Output("btn-update", "disabled"), True, False),
+    #     (
+    #         Output("text-notif", "style"),
+    #         {"visibility": "hidden"},
+    #         {"visibility": "visible"},
+    #     )
+    # ]
+)
+
+def update_balance_sheet(y, q, m, n_clicks):
+    print(y, q, m)
+    print(n_clicks)
+
+    if y is not None and q is not None and m is not None:
+        bs_update = bs_all.loc[bs_all.year.isin(y) &
+                    bs_all.quarter_name.isin(q) & 
+                    bs_all.month_name.isin(m)
+                    ].sort_values(by=['year', 'quarter_name', 'month'])
+
+    elif y is not None and q is not None and (m is None):
+        bs_update = bs_all.loc[bs_all.year.isin(y) &
+                    bs_all.quarter_name.isin(q)
+                    ].sort_values(by=['year', 'quarter_name', 'month'])
+    
+    elif y is not None and (q is None and m is None):
+        bs_update = bs_all.loc[bs_all.year.isin(y)
+                    ].sort_values(by=['year', 'quarter_name', 'month'])
+    else:
+        bs_update = bs_default
+
+    data = bs_update.to_dict('records')
+    update_str = "Updated on " + datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+
+    return [update_str, data]
     
 
 if __name__ == "__main__":
