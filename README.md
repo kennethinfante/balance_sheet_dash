@@ -3,9 +3,7 @@
 This is my project in using Dash to show balance sheet pivot table.
 
 ## TODO
-* Added inputs for year, quarter, month
-* Interact inputs with the table
-* Cross filtering
+* Add flare when table is updated
 * Replace table with pivot table
 * Add totals
 * Highlight totals
