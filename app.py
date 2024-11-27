@@ -5,7 +5,22 @@ from dash.dependencies import Output, Input
 import pandas as pd
 
 bs_all = pd.read_csv('data-raw/balance_sheet_model.csv')
-bs_all = bs_all[bs_all['year'].isin([2022, 2023, 2024])]
+
+# select only relevant columns
+columns_to_show = ['year', 'quarter_name', 'month_name', 'bs_flag', 'category', 'account_name', 'std_amount_gbp']
+
+bs_all = bs_all[columns_to_show]
+date_filters = pd.read_csv('data-raw/date_filters.csv')
+
+# initial filters
+yr_filters = date_filters.year.drop_duplicates(ignore_index=True).sort_values(ascending=False, ignore_index=True)
+
+yr_initial_select = yr_filters[0]
+
+qtr_filters = date_filters.quarter_name.drop_duplicates().sort_values(ascending=False, ignore_index=True)
+
+# bs_initial = bs_all[bs_all['year'] == yr_initial_select]
+bs_initial = bs_all.loc[bs_all['year'] == yr_initial_select, :]
 
 app = Dash(__name__)
 
@@ -27,47 +42,58 @@ app.layout = html.Div(
             ],
         ),
         html.Div(
-            id="menu-area",
+            id="menu-label",
             children=[
-                html.Div(
-                    children=[
-                        html.Div(
-                            className="menu-title",
-                            children="Year"
-                        ),
-                        dcc.Checklist(
-                            id="yr-filter",
-                            className="yr-chk",
-                            options=[{"label": year, "value": year} for year 
-                                     in bs_all.year.drop_duplicates().sort_values(ascending=False)],
-                            # value=bs_all.year.drop_duplicates().sort_values()[-1]
-                        )
-                    ]
+                html.P(
+                    id="yr-label",
+                    children="Year",
+                    style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
                 ),
-                html.Div(
-                    children=[
-                        html.Div(
-                            className="menu-title",
-                            children="Quarter"
-                        ),
-
-                        # to use unique() does not have sort_values()
-                        # sort does
-                        dcc.Checklist(
-                            id="qtr-filter",
-                            className="qtr-chk",
-                            options=[{"label": quarter, "value": quarter} for quarter
-                                     in bs_all.quarter.drop_duplicates().sort_values()]
-                        )
-                    ]
+                html.P(
+                    id="qtr-label",
+                    children="Quarter",
+                    style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
+                ),
+                html.P(
+                    id="month-label",
+                    children="Month",
+                    style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
                 )
             ]
+        ),
+        html.Div(
+            id="menu-option",
+            children=[
+                dcc.Checklist(
+                    id="yr-filter",
+                    className="yr-chk",
+                    options=[{"label": year, "value": year} for year 
+                                in yr_filters],
+                    value=[yr_initial_select],
+                    style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
+                    # value=bs_all.year.drop_duplicates().sort_values()[-1]
+                ),
+                dcc.Checklist(
+                    id="qtr-filter",
+                    className="qtr-chk",
+                    options=[{"label": quarter, "value": quarter} for quarter
+                                in qtr_filters],
+                    style=({'width': '30%', 'display': 'inline-block', 'vertical-align': 'top'})
+                )
+            ]
+        ),
+        html.Div(
+            id="separator",
+            children=[
+                html.Br()
+                ,html.Button("Show Balance Sheet", id="show-balance-sheet", n_clicks=0)
+                , html.Hr(), html.Br()]
         ),
         html.Div(
             dash_table.DataTable(
                 id='bs-table',
                 columns=[{"name": i, "id": i} 
-                         for i in bs_all.columns],
+                         for i in bs_initial.columns],
                 data=bs_all.to_dict('records'),
                 style_cell=dict(textAlign='left'),
                 style_header=dict(backgroundColor="paleturquoise"),
