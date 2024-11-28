@@ -123,18 +123,23 @@ app.layout = html.Div(
     ]
 )
 
+# code for piping
+def try_loc(df, column, values_to_search:list):
+    if values_to_search:
+        return df.loc[df[column].isin(values_to_search)]
+    else:
+        return df
+
+def sort_val(df, by:list):
+    return df.sort_values(by=['year', 'quarter_name', 'month'])
+
 @app.callback(
     Output('filter-month', 'options'), 
     Input('filter-yr', 'value'),
     Input('filter-qtr', 'value'))
 def update_months(y, q):
-    if y is not None and q is not None:
-        stripped_dates = date_filters.loc[date_filters.year.isin(y)
-                            ].loc[date_filters.quarter_name.isin(q)]
-    elif y is not None and q is None:
-        stripped_dates = date_filters.loc[date_filters.year.isin(y)]
-    else:
-        stripped_dates = date_filters.loc[date_filters.year == yr_initial_select]
+    stripped_dates = date_filters.pipe(try_loc, "year", y
+                    ).pipe(try_loc, "quarter_name", q)
     
     available_months = stripped_dates.sort_values(by='month'
                             ).month_name.drop_duplicates(ignore_index=True)
@@ -166,22 +171,10 @@ def update_balance_sheet(y, q, m, n_clicks):
     print(y, q, m)
     print(n_clicks)
 
-    if y is not None and q is not None and m is not None:
-        bs_update = bs_all.loc[bs_all.year.isin(y) &
-                    bs_all.quarter_name.isin(q) & 
-                    bs_all.month_name.isin(m)
-                    ].sort_values(by=['year', 'quarter_name', 'month'])
-
-    elif y is not None and q is not None and (m is None):
-        bs_update = bs_all.loc[bs_all.year.isin(y) &
-                    bs_all.quarter_name.isin(q)
-                    ].sort_values(by=['year', 'quarter_name', 'month'])
-    
-    elif y is not None and (q is None and m is None):
-        bs_update = bs_all.loc[bs_all.year.isin(y)
-                    ].sort_values(by=['year', 'quarter_name', 'month'])
-    else:
-        bs_update = bs_default
+    bs_update = bs_all.pipe(try_loc, "year", y
+                ).pipe(try_loc, "quarter_name", q
+                ).pipe(try_loc, "month_name", m
+                ).pipe(sort_val, by=['year', 'quarter_name', 'month'])
 
     data = bs_update.to_dict('records')
     update_str = "Updated on " + datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
