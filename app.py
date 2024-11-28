@@ -8,10 +8,10 @@ from dash.dependencies import Output, Input, State
 from dash.exceptions import PreventUpdate
 from dash.long_callback import DiskcacheLongCallbackManager
 
-## Diskcache
-import diskcache
-cache = diskcache.Cache("./cache")
-long_callback_manager = DiskcacheLongCallbackManager(cache)
+# commented out due to deployment
+# import diskcache
+# cache = diskcache.Cache("./cache")
+# long_callback_manager = DiskcacheLongCallbackManager(cache)
 
 
 bs_all = pd.read_csv('data-raw/balance_sheet_model.csv')
@@ -33,7 +33,9 @@ qtr_filters = date_filters.quarter_name.drop_duplicates().sort_values(ascending=
 bs_default = bs_all.loc[bs_all.year == yr_initial_select
                         ].sort_values(by=['year', 'quarter_name', 'month'])
 
-app = dash.Dash(__name__, long_callback_manager=long_callback_manager)
+# commented out due to deployment
+# app = dash.Dash(__name__, long_callback_manager=long_callback_manager)
+app = dash.Dash(__name__)
 
 app.layout = html.Div(
     id="app-container",
