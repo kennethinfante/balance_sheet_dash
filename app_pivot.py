@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import numpy as np
 import pandas as pd
 import dash
 from dash import dcc, html, dash_table
@@ -9,18 +10,38 @@ from dash.exceptions import PreventUpdate
 from dash.long_callback import DiskcacheLongCallbackManager
 
 # commented out due to deployment
-# import diskcache
-# cache = diskcache.Cache("./cache")
-# long_callback_manager = DiskcacheLongCallbackManager(cache)
+import diskcache
+cache = diskcache.Cache("./cache")
+long_callback_manager = DiskcacheLongCallbackManager(cache)
 
 
 bs_all = pd.read_csv('data-raw/balance_sheet_model.csv')
 
 # select only relevant columns
-columns_to_show = ['year', 'quarter_name', 'month_name', 'month', 'bs_flag', 'category', 'account_name', 'std_amount_gbp']
+columns_to_show = ['year', 'quarter_name', 'month_name', 'month', 'bs_flag', 'category', 'ns_bs_flag', 'ns_category', 'account_name', 'std_amount_gbp']
 
-bs_all = bs_all[columns_to_show]
+bs_all= bs_all[columns_to_show]
 date_filters = pd.read_csv('data-raw/date_filters.csv')
+
+bs_all['BS_Flag'] = np.where(bs_all['bs_flag']=='Assets', 'Assets', 'Liabilities and Equity')
+bs_all['NS_BS_Flag'] = np.where(bs_all['ns_bs_flag']=='Assets', 'Assets', 'Liabilities and Equity')
+
+# helper functions
+def try_loc(df, column, values_to_search:list):
+    if values_to_search:
+        return df.loc[df[column].isin(values_to_search)]
+    else:
+        return df
+
+def sort_val(df, by:list):
+    return df.sort_values(by=['year', 'quarter_name', 'month'])
+
+# new function because df.pivot does not have the aggfunc
+def pivot_val(df, values:list, index:list, columns:list, aggfunc:str):
+    try:
+        return pd.pivot_table(df, values, index, columns, aggfunc)
+    except Exception as error:
+        print('Error producing pivot table: ' + repr(error))
 
 # initial filters
 yr_filters = date_filters.year.drop_duplicates().sort_values(ascending=False, ignore_index=True)
@@ -29,13 +50,14 @@ yr_initial_select = yr_filters[0]
 
 qtr_filters = date_filters.quarter_name.drop_duplicates().sort_values(ascending=False, ignore_index=True)
 
-# bs_initial = bs_all[bs_all['year'] == yr_initial_select]
-bs_default = bs_all.loc[bs_all.year == yr_initial_select
-                        ].sort_values(by=['year', 'quarter_name', 'month'])
+bs_initial = bs_all.loc[bs_all.year == yr_initial_select
+                ].pipe(pivot_val, values=['std_amount_gbp'], index=['BS_Flag', 'category'],
+                columns=['year', 'quarter_name', 'month_name'], aggfunc='sum'
+                ).reset_index(drop=False)
 
 # commented out due to deployment
-# app = dash.Dash(__name__, long_callback_manager=long_callback_manager)
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, long_callback_manager=long_callback_manager)
+# app = dash.Dash(__name__)
 
 app.layout = html.Div(
     id="app-container",
@@ -50,7 +72,7 @@ app.layout = html.Div(
                 ),
                 html.P(
                     id="header-description",
-                    children="Per Accounting Adjustment",
+                    children="Per Adjusted",
                 ),
             ],
         ),
@@ -111,10 +133,10 @@ app.layout = html.Div(
         ),
         html.Div(
             dash_table.DataTable(
-                id='table-bs',
+                id='pivot-bs',
                 columns=[{"name": i, "id": i} 
-                         for i in bs_default.columns],
-                data=bs_default.to_dict('records'),
+                         for i in bs_initial.columns],
+                data=bs_initial.to_dict('records'),
                 style_cell=dict(textAlign='left'),
                 style_header=dict(backgroundColor="paleturquoise"),
                 style_data=dict(backgroundColor="lavender")
@@ -122,16 +144,6 @@ app.layout = html.Div(
         ),
     ]
 )
-
-# code for piping
-def try_loc(df, column, values_to_search:list):
-    if values_to_search:
-        return df.loc[df[column].isin(values_to_search)]
-    else:
-        return df
-
-def sort_val(df, by:list):
-    return df.sort_values(by=['year', 'quarter_name', 'month'])
 
 @app.callback(
     Output('filter-month', 'options'), 
@@ -149,8 +161,9 @@ def update_months(y, q):
 
 # good enough for update - long callbacks are difficult
 @app.callback(
+    Output('pivot-bs', 'columns'),
+    Output('pivot-bs', 'data'),
     Output('text-notif', 'children'),
-    Output('table-bs', 'data'),
     State('filter-yr', 'value'),
     State('filter-qtr', 'value'),
     State('filter-month', 'value'),
@@ -168,18 +181,23 @@ def update_months(y, q):
 )
 
 def update_balance_sheet(y, q, m, n_clicks):
-    print(y, q, m)
-    print(n_clicks)
-
     bs_update = bs_all.pipe(try_loc, "year", y
                 ).pipe(try_loc, "quarter_name", q
                 ).pipe(try_loc, "month_name", m
                 ).pipe(sort_val, by=['year', 'quarter_name', 'month'])
 
-    data = bs_update.to_dict('records')
+    # pd.pivot_table is different from df.pivot
+    bs_pivot = bs_update.pipe(pivot_val, values=['std_amount_gbp'], index=['BS_Flag', 'category'],
+                columns=['year', 'quarter_name', 'month_name'], aggfunc='sum'
+                ).reset_index(drop=False)
+
+    columns=[{"name": i, "id": i} 
+                         for i in bs_pivot.columns]
+    
+    data = bs_pivot.to_dict('records')
     update_str = "Updated on " + datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
 
-    return [update_str, data]
+    return columns, data, update_str
     
 
 if __name__ == "__main__":

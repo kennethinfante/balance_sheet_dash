@@ -57,6 +57,7 @@ __pycache__
 
 # Project Specifics #
 ######################
-data.py
+test.py
+test_data.py
 pivot_ex.py
 cache/*
