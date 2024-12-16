@@ -161,8 +161,7 @@ def update_months(y, q):
 )
 
 def update_balance_sheet(y, q, m, n_clicks):
-    print(y, q, m)
-    print(n_clicks)
+    print(y, q, m) # these are list
 
     # unlike Shiny for Python, the years are not string
     cols_to_pivot = []
@@ -182,7 +181,6 @@ def update_balance_sheet(y, q, m, n_clicks):
         .sort_values(by=["year", "quarter_name", "month_num_name"])
     )
 
-    # print("Fuck1", bs_update)
     # pd.pivot_table is different from df.pivot
     bs_pivot = bs_update.pipe(pivot_val, values=['std_amount_gbp'], index=['BS_Flag', 'category'],
                 columns=cols_to_pivot, aggfunc='sum'
@@ -195,10 +193,6 @@ def update_balance_sheet(y, q, m, n_clicks):
     )
 
     bs_flat.columns = flatten_columns(bs_flat)
-
-    # print("Fuck2", bs_flat)
-
-    print(bs_flat.columns)
 
     amount_cols = {
             k: v
